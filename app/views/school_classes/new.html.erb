@@ -1,0 +1,6 @@
+School Class Form
+<%= form_for(@schoolclass) do |f| %>
+  Title: <%= f.text_field :title %><br />
+  Room Number: <%= f.number_field :room_number %><br />
+  <%= f.submit %>
+<% end %>
