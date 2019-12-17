@@ -1,0 +1,11 @@
+<h1> Edit Student Form </h1>
+
+<%=form_for @student do |f|%>
+    <h4><%= f.label :first_name %></h4>
+    <h4><%= f.text_field :first_name %></h4>
+    <br>
+    <h4><%= f.label :last_name %></h4>
+    <h4><%= f.text_area :last_name %></h4>
+    <br>
+    <h4><%= f.submit %></h4>
+<% end %>
