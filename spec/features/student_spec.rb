@@ -18,18 +18,18 @@ describe 'form page' do
     expect(page).to have_content("Lindsey")
   end
 
-  it 'submitted edit form submits content and renders form content' do
-    @edit_student = Student.create(first_name: "Daenerys", last_name: "Targaryen")
+  # it 'submitted edit form submits content and renders form content' do
+  #   @edit_student = Student.create(first_name: "Daenerys", last_name: "Targaryen")
 
-    visit edit_student_path(@edit_student)
+  #   visit edit_student_path(@edit_student)
 
-    fill_in 'student_first_name', with: "Lindsey"
-    fill_in 'student_last_name', with: "Stirling"
+  #   fill_in 'student_first_name', with: "Lindsey"
+  #   fill_in 'student_last_name', with: "Stirling"
 
-    click_on "Update Student"
+  #   click_on "Update Student"
 
-    expect(page).to have_content("Lindsey")
-  end
+  #   expect(page).to have_content("Lindsey")
+  # end
 
   it 'creates a record in the database' do
     visit new_student_path
